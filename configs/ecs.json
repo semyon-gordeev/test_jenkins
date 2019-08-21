@@ -1,0 +1,19 @@
+{
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "cpu": 0,
+      "memory": 300,
+      "image": "675386865712.dkr.ecr.us-east-1.amazonaws.com/prod-yourcluster:latest",
+      "essential": true,
+      "name": "main"
+    }
+  ],
+  "family": "prod-yourcluster-td"
+}
